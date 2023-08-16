@@ -14,5 +14,6 @@ import { PanelModule } from 'primeng/panel';
     MenubarModule,
     PanelModule
   ]
+
 })
 export class PrimeNGModule { }
