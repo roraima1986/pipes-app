@@ -6,6 +6,7 @@
 </p-panel>
 
 <div class="grid">
+  <!--i18nSelect Pipe-->
   <div class="col-12 md:col-6">
     <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
       <p>Saludos {{name}}, es un placer {{gender | i18nSelect:invitationMap}} a nuestro evento</p>
@@ -18,29 +19,41 @@
     </p-fieldset>
   </div>
 
+  <!--i18nPlural Pipe-->
   <div class="col-12 md:col-6">
     <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
 
+      <p>Actualmente {{clients.length | i18nPlural:clientsMap}}</p>
+
+      <p-button
+        (click)="deleteClient()"
+        label="Borrar cliente">
+      </p-button>
     </p-fieldset>
   </div>
 
+  <!--Slice Pipe-->
   <div class="col-12 md:col-6">
     <p-fieldset legend="Slice Pipe" [toggleable]="true">
 
     </p-fieldset>
   </div>
+
+  <!--Json Pipe-->
   <div class="col-12 md:col-6">
     <p-fieldset legend="Json Pipe" [toggleable]="true">
 
     </p-fieldset>
   </div>
 
+  <!--KeyValue Pipe-->
   <div class="col-12 md:col-6">
     <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
 
     </p-fieldset>
   </div>
 
+  <!--Async Pipe-->
   <div class="col-12 md:col-6">
     <p-fieldset legend="Async Pipe" [toggleable]="true">
 
